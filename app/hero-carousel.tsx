@@ -5,7 +5,7 @@ export function HeroCarousel() {
   const project = projects.find((item) => item.featured) ?? projects[0];
   const videoUrl = getVimeoEmbedUrl(project.url);
   return <section className="flagship" id="top">
-    <img className="flagship-image" src={project.thumbnail} alt="" />
+    <img className={`flagship-image${videoUrl ? ' has-video' : ''}`} src={project.thumbnail} alt="" />
     {videoUrl && <iframe className="video-embed" src={videoUrl} title={`${project.title} video`} allow="autoplay; fullscreen; picture-in-picture" />}
     <div className="flagship-shade" aria-hidden="true" />
     <div className="flagship-top"><p><span className="pulse" /> Featured work</p><a href="#work">See all work <ArrowDownRight size={17} /></a></div>
