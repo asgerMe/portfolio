@@ -8,7 +8,8 @@
     "url": "https://vimeo.com/722302559",
     "thumbnail": "https://i.vimeocdn.com/video/1454658733-2fb8f0f2515dee22c19fef97f49748b25b2e7383d227262ffd0d644b8f9b88d8-d_1280?region=us",
     "description": "An exploratory render focused on atmosphere and form.",
-    "featured": false
+    "featured": false,
+    "hero": true
   },
   {
     "id": "03",
@@ -18,7 +19,8 @@
     "url": "https://vimeo.com/722302367",
     "thumbnail": "https://i.vimeocdn.com/video/1454658412-033f78225aa12feb7888788c76e9622ef8b6d52d3001a63ff6f5e9e0c4890cfe-d_1280?region=us",
     "description": "A shorter cut from the Beam visual exploration.",
-    "featured": false
+    "featured": false,
+    "hero": true
   },
   {
     "id": "05",
@@ -28,6 +30,7 @@
     "url": "https://vimeo.com/599345260",
     "thumbnail": "https://i.vimeocdn.com/video/1235870249-b5c55142025831e085105d562a95aa56614004ccc702d6c8fce5a24345006869-d_1280?region=us",
     "description": "A real-time smoke experiment built for game environments.",
-    "featured": false
+    "featured": false,
+    "hero": true
   }
 ]

@@ -9,6 +9,7 @@ export type Project = {
   thumbnail: string;
   description: string;
   featured: boolean;
+  hero?: boolean;
 };
 
 export const projects = content as Project[];
