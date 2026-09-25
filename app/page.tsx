@@ -31,9 +31,11 @@ export default function Home() {
       <section className="experience-section" id="experience">
         <div className="experience-heading"><p className="kicker">03 / Experience</p><h2>Experience.</h2></div>
         <div className="experience-list">
-          <article className="experience-item"><p className="experience-company">CD PROJEKT RED</p><div><h3>Lead &amp; Senior Technical Artist</h3><p className="experience-period">Sep 2025 — Present</p><p>Leading the Technical Art team on an unannounced project.</p></div></article>
-          <article className="experience-item"><p className="experience-company io">IO</p><div><h3>Lead &amp; Senior Technical Artist</h3><p className="experience-period">Jan 2025 — Sep 2025</p><p>Led the Technical Art and VFX team on Project Fantasy.</p></div></article>
-          <article className="experience-item"><p className="experience-company">BLACKBIRD<br />INTERACTIVE</p><div><h3>Technical Artist</h3><p className="experience-period">Mar 2021 — Oct 2024</p><p>Built pipelines, shaders, real-time effects, procedural tools, and rendering systems across game development projects.</p></div></article>
+          <article className="experience-item"><p className="experience-company io">IO</p><div><h3>Software Engineer</h3><p className="experience-organization">IO Interactive · Full-time</p><p className="experience-period">Jan 2021 — Present</p><p>Copenhagen, Denmark</p></div></article>
+          <article className="experience-item"><p className="experience-company">INDEPENDENT</p><div><h3>Software Engineer</h3><p className="experience-organization">Freelance · Self-employed</p><p className="experience-period">Jan 2019 — Aug 2022</p><p>Designed cloud-based Bayesian travel-time inference methods used by Denmark’s largest mobile-car-washing provider.</p></div></article>
+          <article className="experience-item"><p className="experience-company">UNIVERSITY OF<br />COPENHAGEN</p><div><h3>PhD Scholar</h3><p className="experience-period">Jun 2016 — Jun 2019</p><p>Copenhagen, Denmark</p></div></article>
+          <article className="experience-item"><p className="experience-company">HARVARD<br />UNIVERSITY</p><div><h3>PhD Student</h3><p className="experience-period">Feb 2019 — May 2019</p><p>Studied deep-learning-based physics simulation in the Boston area.</p></div></article>
+          <article className="experience-item"><p className="experience-company">D60</p><div><h3>Graphic Designer</h3><p className="experience-period">Sep 2014 — Sep 2015</p><p>Aarhus, Denmark</p></div></article>
         </div>
       </section>
 

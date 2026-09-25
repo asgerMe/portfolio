@@ -68,6 +68,7 @@ nav a:hover { color:var(--acid); }
 .experience-company.io { font-size:clamp(2.4rem,5vw,5rem); letter-spacing:-.12em; line-height:.72; }
 .experience-item h3 { margin:0; color:#fff; font-size:clamp(1.2rem,2vw,1.75rem); letter-spacing:-.035em; font-weight:570; }
 .experience-item p:not(.experience-company) { max-width:58ch; margin:14px 0 0; color:#c7cbc6; font-size:1rem; line-height:1.55; }
+.experience-item .experience-organization { margin-top:5px; color:#fff; font-size:.9rem; }
 .experience-item .experience-period { margin-top:8px; color:#88dfff; font-family:var(--font-geist-mono); font-size:.76rem; letter-spacing:.06em; text-transform:uppercase; }
 footer { min-height:78vh; display:flex; flex-direction:column; justify-content:space-between; background:#aab77a; color:#080a0c; }
 footer .kicker { color:#3d452d; }
