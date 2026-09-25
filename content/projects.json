@@ -72,12 +72,13 @@
   },
   {
     "id": "07",
-    "title": "Implemented the semi-implicit material point method from Frozen in houdini - Master Thesis https://drive.google.com/file/d/0B16UYreWAOhYbThRUDFuWW5JYU0/view?usp=sharing&resourcekey=0-bVqe1s9LFYtJLnymlbh7EQ ",
+    "title": "Semi-Implicit Material Point Method",
     "format": "Video",
     "tone": "tone-lime",
-    "url": "https://vimeo.com/150298443",
+    "url": "https://drive.google.com/file/d/0B16UYreWAOhYbThRUDFuWW5JYU0/view?usp=sharing&resourcekey=0-bVqe1s9LFYtJLnymlbh7EQ",
+    "videoUrl": "https://vimeo.com/150298443",
     "thumbnail": "https://i.vimeocdn.com/video/549738677-a8234c92ab96a28bdbce56c6c71bc0103f17ab374c7581911a6ee95b023c0d00-d_640?region=us",
-    "description": "Vimeo clip.",
+    "description": "Master thesis · Houdini implementation.",
     "featured": false,
     "hero": false
   },

@@ -6,6 +6,7 @@ export type Project = {
   format: 'Video';
   tone: string;
   url: string;
+  videoUrl?: string;
   thumbnail: string;
   localVideo?: string;
   description: string;
@@ -28,7 +29,8 @@ export const projects = projectContent.projects;
 export const projectSections = projectContent.sections;
 
 export function getVideoEmbedUrl(project: Project) {
-  const { url, start, end } = project;
+  const { start, end } = project;
+  const url = project.videoUrl ?? project.url;
   const videoId = url.match(/vimeo\.com\/(\d+)/)?.[1];
 
   if (videoId) return `https://player.vimeo.com/video/${videoId}?background=1&autoplay=1&loop=1&muted=1&autopause=0`;
