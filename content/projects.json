@@ -1,14 +1,5 @@
 [
-  {
-    "id": "01",
-    "title": "Lake Zoom",
-    "format": "Video",
-    "tone": "tone-cobalt",
-    "url": "https://vimeo.com/929474492",
-    "thumbnail": "https://i.vimeocdn.com/video/1825535305-580c29287a34cdbaf987a635f2b01705731a9825668ccb953aeada6454de072d-d_1280?region=us",
-    "description": "A visual study of landscape, light and motion.",
-    "featured": true
-  },
+
   {
     "id": "02",
     "title": "Beam",
@@ -30,16 +21,6 @@
     "featured": false
   },
   {
-    "id": "04",
-    "title": "Vortex Particle Movie",
-    "format": "Video",
-    "tone": "tone-orange",
-    "url": "https://vimeo.com/646030323",
-    "thumbnail": "https://i.vimeocdn.com/video/1300274132-baac108de85108aa6463b96c2d61f824ab0dc946a04cab576_1280?region=us",
-    "description": "Particle motion and vortex behaviour in a rendered study.",
-    "featured": false
-  },
-  {
     "id": "05",
     "title": "Real-Time Volumetric Smoke",
     "format": "Video",
@@ -47,16 +28,6 @@
     "url": "https://vimeo.com/599345260",
     "thumbnail": "https://i.vimeocdn.com/video/1235870249-b5c55142025831e085105d562a95aa56614004ccc702d6c8fce5a24345006869-d_1280?region=us",
     "description": "A real-time smoke experiment built for game environments.",
-    "featured": false
-  },
-  {
-    "id": "06",
-    "title": "NeuralVortex2D",
-    "format": "Video",
-    "tone": "tone-pink",
-    "url": "https://vimeo.com/596175679",
-    "thumbnail": "https://i.vimeocdn.com/video/1230871600-3e507c5e71af473bebc6c251a2ace0ab5d6b3244720358a253fe6e40cec4dedb-d_1280?region=us",
-    "description": "A two-dimensional neural vortex experiment.",
     "featured": false
   }
 ]

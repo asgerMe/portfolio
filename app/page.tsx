@@ -19,17 +19,17 @@ export default function Home() {
       <section className="about-section" id="about">
         <p className="kicker">02 / About</p>
         <div className="about-grid">
-          <h2>Effects in motion.<br />Systems underneath.</h2>
+          <h2>About</h2>
           <div className="about-copy">
-            <p>I work with real-time VFX, procedural systems, and computer graphics—shaping motion, atmosphere, and simulation into images that feel alive.</p>
-            <p>This portfolio collects finished pieces, technical studies, and visual experiments across particles, volumetrics, rendering, and generative work.</p>
+            <p>Graphics and VFX work by Asger Meldgaard.</p>
+            <p>Add a short bio, role, software, and contact details here.</p>
           </div>
         </div>
-        <div className="capabilities" aria-label="Capabilities"><span>Real-time VFX</span><span>Procedural systems</span><span>Simulation</span><span>Rendering</span></div>
+        <div className="capabilities" aria-label="Capabilities"><span>Motion</span><span>Simulation</span><span>Real-time</span><span>Compositing</span></div>
       </section>
 
       <footer>
-        <div><p className="kicker">03 / Say hello</p><a className="big-link" href="mailto:hello@example.com">Let’s create<br />something striking <ArrowUpRight /></a></div>
+        <div><p className="kicker">03 / Contact</p><a className="big-link" href="mailto:hello@example.com">Contact <ArrowUpRight /></a></div>
         <div className="footer-bottom"><p>© 2026 Asger</p><div><a href="#top">Back to top ↑</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
       </footer>
     </main>
