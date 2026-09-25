@@ -116,13 +116,11 @@ footer .kicker { color:#333924; }
 .flagship-top { position:absolute; z-index:2; top:clamp(28px,4vw,62px); left:clamp(22px,4.5vw,72px); right:clamp(22px,4.5vw,72px); display:flex; justify-content:space-between; align-items:center; color:#eef0ec; font-family:var(--font-geist-mono); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; }
 .flagship-top p,.flagship-top a { display:flex; align-items:center; gap:9px; margin:0; }
 .flagship-top a { padding-bottom:6px; border-bottom:1px solid #ffffff70; }
-.flagship-caption { position:absolute; z-index:2; right:clamp(22px,6vw,100px); bottom:clamp(30px,7vw,95px); width:min(430px,calc(100% - 44px)); padding:26px; color:var(--ink); background:rgba(8,10,13,.73); border:1px solid #ffffff2b; backdrop-filter:blur(13px); transition:background .25s,transform .25s; }
-.flagship-caption:hover { background:rgba(8,10,13,.9); transform:translateY(-5px); }
-.flagship-label,.watch-link { display:flex; align-items:center; gap:8px; font-family:var(--font-geist-mono); font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; }
+.flagship-caption { position:absolute; z-index:2; right:clamp(22px,6vw,100px); bottom:clamp(30px,7vw,95px); width:min(500px,calc(100% - 44px)); padding:0; color:var(--ink); text-shadow:0 2px 22px rgba(0,0,0,.9); }
+.flagship-label { display:flex; align-items:center; gap:8px; font-family:var(--font-geist-mono); font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; }
 .flagship-caption h1 { margin:18px 0 10px; font-size:clamp(2.3rem,4.5vw,4.8rem); letter-spacing:-.07em; line-height:.85; font-weight:550; }
 .flagship-caption p { margin:0 0 20px; max-width:34ch; color:#d1d5cf; line-height:1.5; font-size:1rem; }
-.watch-link { color:var(--acid); }
 .media-card-bottom { align-items:flex-end; gap:16px; }
 .media-title { margin:0 0 5px; font-size:1rem; font-weight:500; }
 .media-description { max-width:30ch; margin:0; color:#e8eae5; font-size:.78rem; line-height:1.35; opacity:.85; }
-@media(max-width:560px){.flagship{min-height:72svh}.flagship-caption{bottom:22px;padding:20px}.flagship-caption h1{font-size:2.6rem}.flagship-top{top:24px}.media-description{font-size:.8rem}}
+@media(max-width:560px){.flagship{min-height:72svh}.flagship-caption{bottom:22px}.flagship-caption h1{font-size:2.6rem}.flagship-top{top:24px}.media-description{font-size:.8rem}}

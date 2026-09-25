@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Asger — Developer & Maker',
-  description: 'A growing collection of digital products, useful tools, and experiments by Asger.',
+  title: 'Asger — Graphics & VFX',
+  description: 'Real-time VFX, simulations, procedural graphics, and visual experiments by Asger Meldgaard.',
 };
 
 export default function RootLayout({
