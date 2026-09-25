@@ -88,6 +88,8 @@ footer .kicker { color:#333924; }
 .media-heading { margin-bottom:48px; }
 .grid-note { max-width:270px; margin:0; color:var(--muted); font-size:.94rem; line-height:1.5; }
 .media-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.work-groups { display:grid; gap:clamp(64px,9vw,130px); }
+.work-group h3 { margin:0 0 18px; font-family:var(--font-geist-mono); font-size:.72rem; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
 .media-card { min-height:clamp(240px,29vw,440px); position:relative; overflow:hidden; border:1px solid #2a303b; color:var(--ink); transition:transform .3s ease,border-color .3s ease; container-type:size; }
 .media-card:hover { transform:translateY(-6px); border-color:currentColor; }
 .media-ring { position:absolute; width:58%; aspect-ratio:1; border:1px solid currentColor; border-radius:50%; top:20%; left:21%; box-shadow:0 0 55px currentColor; opacity:.68; }

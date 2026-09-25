@@ -14,7 +14,16 @@ export type Project = {
   end?: number;
 };
 
-export const projects = content as Project[];
+export type ProjectSection = {
+  id: string;
+  title: string;
+  projectIds: string[];
+};
+
+const projectContent = content as { projects: Project[]; sections: ProjectSection[] };
+
+export const projects = projectContent.projects;
+export const projectSections = projectContent.sections;
 
 export function getVideoEmbedUrl(project: Project) {
   const { url, start, end } = project;

@@ -1,4 +1,17 @@
-[
+{
+  "sections": [
+    {
+      "id": "real-time-vfx",
+      "title": "Real-time VFX",
+      "projectIds": ["01", "02", "03", "05"]
+    },
+    {
+      "id": "houdini-rd",
+      "title": "Houdini experiments / R&D",
+      "projectIds": ["06", "07", "08", "09", "10"]
+    }
+  ],
+  "projects": [
   {
     "id": "01",
     "title": "007 First Light",
@@ -100,4 +113,5 @@
     "featured": false,
     "hero": false
   }
-]
+  ]
+}
