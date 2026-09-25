@@ -26,6 +26,6 @@ export function HeroCarousel() {
     {videoUrl && <iframe key={project.id} className="video-embed" src={videoUrl} title={`${project.title} video`} allow="autoplay; fullscreen; picture-in-picture" />}
     <div className="flagship-shade" aria-hidden="true" />
     <div className="flagship-top"><p><span className="pulse" /> Featured work</p><a href="#work">See all work <ArrowDownRight size={17} /></a></div>
-    <div className="flagship-caption"><p className="flagship-label">VFX ARTIST / MOTION DESIGNER</p><h1>ASGER <em>MELDGAARD</em></h1><p className="flagship-role">Creating graphics, simulations, and visual effects for moving images.</p><p className="flagship-project">Currently showing / {project.title}</p></div>
+    <div className="flagship-caption"><p className="flagship-label">VFX ARTIST / PROGRAMMER / PHYSICS</p><h1>ASGER <em>MELDGAARD</em></h1><p className="flagship-role">A VFX artist and programmer with a physics background, creating simulations, graphics, and visual effects.</p><p className="flagship-project">Currently showing / {project.title}</p></div>
   </section>;
 }
