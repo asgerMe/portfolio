@@ -11,13 +11,13 @@ export function ProjectShowcase() {
     const videoUrl = getVideoEmbedUrl(project);
     const isActive = activeProject === project.id;
 
-    return <article className={`media-card ${project.tone}`} key={project.id} tabIndex={0} onMouseEnter={() => setActiveProject(project.id)} onMouseLeave={() => setActiveProject(null)} onFocus={() => setActiveProject(project.id)} onBlur={() => setActiveProject(null)}>
-      <img className="media-thumbnail" src={project.thumbnail} alt="" />
-      {isActive && videoUrl && <iframe className="video-embed" src={videoUrl} title={`${project.title} video preview`} allow="autoplay; fullscreen; picture-in-picture" />}
+    return <a className={`media-card ${project.tone}${project.textCard ? ' text-card' : ''}`} key={project.id} href={project.url} target="_blank" rel="noreferrer" aria-label={`Open ${project.title}`} onMouseEnter={() => setActiveProject(project.id)} onMouseLeave={() => setActiveProject(null)} onFocus={() => setActiveProject(project.id)} onBlur={() => setActiveProject(null)}>
+      {!project.textCard && <img className="media-thumbnail" src={project.thumbnail} alt="" />}
+      {!project.textCard && isActive && videoUrl && <iframe className="video-embed" src={videoUrl} title={`${project.title} video preview`} allow="autoplay; fullscreen; picture-in-picture" />}
       <div className="media-shade" aria-hidden="true" />
-      <div className="media-card-top"><span>{project.id} / VFX</span></div>
+      <div className="media-card-top"><span>{project.id} / {project.textCard ? 'YOUTUBE' : 'VFX'}</span></div>
       <div className="media-card-bottom"><div><p className="media-title">{project.title}</p><p className="media-description">{project.description}</p></div></div>
-    </article>;
+    </a>;
   };
 
   return <section className="work-section" id="work">

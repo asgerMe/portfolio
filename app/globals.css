@@ -109,6 +109,11 @@ footer .kicker { color:#333924; }
 .preview-shade { position:absolute; inset:0; z-index:1; background:linear-gradient(180deg,rgba(8,10,13,.28),rgba(8,10,13,.06) 45%,rgba(8,10,13,.9)); }
 .media-shade { position:absolute; inset:0; z-index:1; background:linear-gradient(180deg,rgba(8,10,13,.18),rgba(8,10,13,.03) 42%,rgba(8,10,13,.82)); }
 .media-card { background:#15191f; }
+.media-card.text-card { background:#000; color:var(--ink); }
+.media-card.text-card .media-shade { display:none; }
+.media-card.text-card .media-card-bottom { top:50%; bottom:auto; align-items:center; transform:translateY(-50%); }
+.media-card.text-card .media-title { max-width:13ch; margin-bottom:12px; font-size:clamp(1.4rem,2.2vw,2.4rem); letter-spacing:-.05em; line-height:.95; }
+.media-card.text-card .media-description { max-width:24ch; font-size:.86rem; line-height:1.5; }
 .media-art,.preview-art { display:none; }
 
 /* Flagship presentation */

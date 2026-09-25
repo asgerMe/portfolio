@@ -10,6 +10,7 @@ export type Project = {
   description: string;
   featured: boolean;
   hero?: boolean;
+  textCard?: boolean;
   start?: number;
   end?: number;
 };

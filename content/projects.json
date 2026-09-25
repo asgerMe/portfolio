@@ -22,6 +22,7 @@
     "description": "Selected VFX work · 15:52–17:53.",
     "featured": false,
     "hero": false,
+    "textCard": true,
     "start": 952,
     "end": 1073
   },
