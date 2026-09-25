@@ -36,6 +36,9 @@ export default function Home() {
           <article className="experience-item"><p className="experience-company">UNIVERSITY OF<br />COPENHAGEN</p><div><h3>PhD Scholar</h3><p className="experience-period">Jun 2016 — Jun 2019</p><p>Copenhagen, Denmark</p></div></article>
           <article className="experience-item"><p className="experience-company">HARVARD<br />UNIVERSITY</p><div><h3>PhD Student</h3><p className="experience-period">Feb 2019 — May 2019</p><p>Studied deep-learning-based physics simulation in the Boston area.</p></div></article>
           <article className="experience-item"><p className="experience-company">D60</p><div><h3>Graphic Designer</h3><p className="experience-period">Sep 2014 — Sep 2015</p><p>Aarhus, Denmark</p></div></article>
+          <p className="experience-divider">Education</p>
+          <article className="experience-item"><p className="experience-company">AARHUS<br />UNIVERSITY</p><div><h3>Master&apos;s Degree, Geophysics</h3><p className="experience-period">2013 — 2016</p></div></article>
+          <article className="experience-item"><p className="experience-company">AARHUS<br />UNIVERSITY</p><div><h3>Bachelor&apos;s Degree, Nanoscience</h3><p className="experience-period">2009 — 2013</p></div></article>
         </div>
       </section>
 
