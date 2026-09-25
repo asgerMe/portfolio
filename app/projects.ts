@@ -1,10 +1,10 @@
-export type Project = { id: string; title: string; format: 'Image' | 'Video'; tone: string };
+export type Project = { id: string; title: string; format: 'Video'; tone: string; url: string; thumbnail: string };
 
 export const projects: Project[] = [
-  { id: '01', title: 'Flagship project', format: 'Image', tone: 'tone-cobalt' },
-  { id: '02', title: 'Useful little tool', format: 'Video', tone: 'tone-lime' },
-  { id: '03', title: 'Idea worth testing', format: 'Image', tone: 'tone-violet' },
-  { id: '04', title: 'A thing in progress', format: 'Video', tone: 'tone-orange' },
-  { id: '05', title: 'Side experiment', format: 'Image', tone: 'tone-sky' },
-  { id: '06', title: 'Next up', format: 'Image', tone: 'tone-pink' },
+  { id: '01', title: 'Lake Zoom', format: 'Video', tone: 'tone-cobalt', url: 'https://vimeo.com/929474492', thumbnail: 'https://i.vimeocdn.com/video/1825535305-580c29287a34cdbaf987a635f2b01705731a9825668ccb953aeada6454de072d-d_1280?region=us' },
+  { id: '02', title: 'Beam', format: 'Video', tone: 'tone-lime', url: 'https://vimeo.com/722302559', thumbnail: 'https://i.vimeocdn.com/video/1454658733-2fb8f0f2515dee22c19fef97f49748b25b2e7383d227262ffd0d644b8f9b88d8-d_1280?region=us' },
+  { id: '03', title: 'Beam Trim', format: 'Video', tone: 'tone-violet', url: 'https://vimeo.com/722302367', thumbnail: 'https://i.vimeocdn.com/video/1454658412-033f78225aa12feb7888788c76e9622ef8b6d52d3001a63ff6f5e9e0c4890cfe-d_1280?region=us' },
+  { id: '04', title: 'Vortex Particle Movie', format: 'Video', tone: 'tone-orange', url: 'https://vimeo.com/646030323', thumbnail: 'https://i.vimeocdn.com/video/1300274132-baac108de85108aa6463b96c2d61f824ab0dc946a04cab576_1280?region=us' },
+  { id: '05', title: 'Real-Time Volumetric Smoke', format: 'Video', tone: 'tone-sky', url: 'https://vimeo.com/599345260', thumbnail: 'https://i.vimeocdn.com/video/1235870249-b5c55142025831e085105d562a95aa56614004ccc702d6c8fce5a24345006869-d_1280?region=us' },
+  { id: '06', title: 'NeuralVortex2D', format: 'Video', tone: 'tone-pink', url: 'https://vimeo.com/596175679', thumbnail: 'https://i.vimeocdn.com/video/1230871600-3e507c5e71af473bebc6c251a2ace0ab5d6b3244720358a253fe6e40cec4dedb-d_1280?region=us' },
 ];

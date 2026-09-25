@@ -11,9 +11,10 @@ export function HeroCarousel() {
   return <section className="hero" id="top">
     <div className="hero-copy"><p className="eyebrow"><span className="pulse" /> Available for interesting work</p><h1>I build things<br />for the <span>web</span>.</h1><div className="hero-bottom"><p className="intro">Developer and maker turning rough ideas into thoughtful digital products. This is where the good ones live.</p><a className="scroll-link" href="#work">Selected work <ArrowDownRight size={20} /></a></div></div>
     <div className={`hero-preview ${project.tone}`}>
-      <div className="preview-art" aria-hidden="true"><span className="preview-orb" /><span className="preview-sheet" /></div>
+      <img className="preview-thumbnail" src={project.thumbnail} alt="" />
+      <div className="preview-shade" aria-hidden="true" />
       <div className="preview-top"><span>FEATURED / {project.id}</span><span>{project.format === 'Video' ? <Play size={13} fill="currentColor" /> : 'IMAGE'}</span></div>
-      <div className="preview-bottom"><div><p>Now showing</p><h2>{project.title}</h2></div><ArrowUpRight size={23} /></div>
+      <a className="preview-bottom" href={project.url} target="_blank" rel="noreferrer" aria-label={`Watch ${project.title} on Vimeo`}><div><p>Now showing</p><h2>{project.title}</h2></div><ArrowUpRight size={23} /></a>
       <div className="preview-dots" aria-label="Featured projects">{projects.map((item, index) => <button key={item.id} onClick={() => setActive(index)} className={index === active ? 'active' : ''} aria-label={`Show ${item.title}`} />)}</div>
     </div>
   </section>;
