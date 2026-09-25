@@ -119,9 +119,9 @@
     "title": "Pig Snow Frolick",
     "format": "Video",
     "tone": "tone-sky",
-    "url": "/videos/pig-snow-frolick.mkv",
+    "url": "videos/pig-snow-frolick.mkv",
     "thumbnail": "",
-    "localVideo": "/videos/pig-snow-frolick.mkv",
+    "localVideo": "videos/pig-snow-frolick.mkv",
     "description": "Personal Houdini study.",
     "featured": false,
     "hero": false
@@ -131,9 +131,9 @@
     "title": "Houdini Study 2022",
     "format": "Video",
     "tone": "tone-violet",
-    "url": "/videos/houdini-study-2022.mkv",
+    "url": "videos/houdini-study-2022.mkv",
     "thumbnail": "",
-    "localVideo": "/videos/houdini-study-2022.mkv",
+    "localVideo": "videos/houdini-study-2022.mkv",
     "description": "Personal Houdini study.",
     "featured": false,
     "hero": false
