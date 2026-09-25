@@ -8,7 +8,7 @@ export function ProjectShowcase() {
       <img className="media-thumbnail" src={project.thumbnail} alt="" />
       <div className="media-shade" aria-hidden="true" />
       <div className="media-card-top"><span>{project.id}</span><span><Play size={13} fill="currentColor" /></span></div>
-      <div className="media-card-bottom"><span>{project.title}</span><ArrowUpRight size={17} /></div>
+      <div className="media-card-bottom"><div><p className="media-title">{project.title}</p><p className="media-description">{project.description}</p></div><ArrowUpRight size={17} /></div>
     </a>)}</div>
   </section>;
 }

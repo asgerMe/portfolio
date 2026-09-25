@@ -1,21 +1,12 @@
-'use client';
-
 import { ArrowDownRight, ArrowUpRight, Play } from 'lucide-react';
-import { useEffect, useState } from 'react';
 import { projects } from './projects';
 
 export function HeroCarousel() {
-  const [active, setActive] = useState(0);
-  useEffect(() => { const timer = window.setInterval(() => setActive((current) => (current + 1) % projects.length), 4200); return () => window.clearInterval(timer); }, []);
-  const project = projects[active];
-  return <section className="hero" id="top">
-    <div className="hero-copy"><p className="eyebrow"><span className="pulse" /> Available for interesting work</p><h1>I build things<br />for the <span>web</span>.</h1><div className="hero-bottom"><p className="intro">Developer and maker turning rough ideas into thoughtful digital products. This is where the good ones live.</p><a className="scroll-link" href="#work">Selected work <ArrowDownRight size={20} /></a></div></div>
-    <div className={`hero-preview ${project.tone}`}>
-      <img className="preview-thumbnail" src={project.thumbnail} alt="" />
-      <div className="preview-shade" aria-hidden="true" />
-      <div className="preview-top"><span>FEATURED / {project.id}</span><span>{project.format === 'Video' ? <Play size={13} fill="currentColor" /> : 'IMAGE'}</span></div>
-      <a className="preview-bottom" href={project.url} target="_blank" rel="noreferrer" aria-label={`Watch ${project.title} on Vimeo`}><div><p>Now showing</p><h2>{project.title}</h2></div><ArrowUpRight size={23} /></a>
-      <div className="preview-dots" aria-label="Featured projects">{projects.map((item, index) => <button key={item.id} onClick={() => setActive(index)} className={index === active ? 'active' : ''} aria-label={`Show ${item.title}`} />)}</div>
-    </div>
+  const project = projects[0];
+  return <section className="flagship" id="top">
+    <img className="flagship-image" src={project.thumbnail} alt="" />
+    <div className="flagship-shade" aria-hidden="true" />
+    <div className="flagship-top"><p><span className="pulse" /> Featured work</p><a href="#work">See all work <ArrowDownRight size={17} /></a></div>
+    <a className="flagship-caption" href={project.url} target="_blank" rel="noreferrer" aria-label={`Watch ${project.title} on Vimeo`}><span className="flagship-label">{project.id} / VIDEO <Play size={13} fill="currentColor" /></span><h1>{project.title}</h1><p>{project.description}</p><span className="watch-link">Watch on Vimeo <ArrowUpRight size={18} /></span></a>
   </section>;
 }
