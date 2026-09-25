@@ -44,5 +44,49 @@
     "description": "A real-time smoke experiment built for game environments.",
     "featured": false,
     "hero": true
+  },
+  {
+    "id": "06",
+    "title": "Popcorn closeup",
+    "format": "Video",
+    "tone": "tone-pink",
+    "url": "https://vimeo.com/218023816",
+    "thumbnail": "https://i.vimeocdn.com/video/635389783-8c7b1247b3f1de5201b64482d57bb20312acc3043eb48ca8eb0b6deb89e59c25-d_640?region=us",
+    "description": "Vimeo clip.",
+    "featured": false,
+    "hero": false
+  },
+  {
+    "id": "07",
+    "title": "The semi-implicit material point method from Frozen",
+    "format": "Video",
+    "tone": "tone-lime",
+    "url": "https://vimeo.com/150298443",
+    "thumbnail": "https://i.vimeocdn.com/video/549738677-a8234c92ab96a28bdbce56c6c71bc0103f17ab374c7581911a6ee95b023c0d00-d_640?region=us",
+    "description": "Vimeo clip.",
+    "featured": false,
+    "hero": false
+  },
+  {
+    "id": "08",
+    "title": "Fly crowd test with Houdini",
+    "format": "Video",
+    "tone": "tone-orange",
+    "url": "https://vimeo.com/255096042",
+    "thumbnail": "https://i.vimeocdn.com/video/682420148-d6b4209fa0923bd3433212e896ce873b10510822961cdf6e7369252828f158fd-d_640?region=us",
+    "description": "Vimeo clip.",
+    "featured": false,
+    "hero": false
+  },
+  {
+    "id": "09",
+    "title": "Viscoelastic finite element HDK plug-in for Houdini",
+    "format": "Video",
+    "tone": "tone-violet",
+    "url": "https://vimeo.com/229295370",
+    "thumbnail": "https://i.vimeocdn.com/video/649600213-8dfdbbdc0efe7d5f88b9b3e5a2289afa3ac1e933ba90d7e544e1e62ccc87e570-d_640?region=us",
+    "description": "Vimeo clip.",
+    "featured": false,
+    "hero": false
   }
 ]
