@@ -10,14 +10,23 @@ export type Project = {
   description: string;
   featured: boolean;
   hero?: boolean;
+  start?: number;
+  end?: number;
 };
 
 export const projects = content as Project[];
 
-export function getVimeoEmbedUrl(url: string) {
+export function getVideoEmbedUrl(project: Project) {
+  const { url, start, end } = project;
   const videoId = url.match(/vimeo\.com\/(\d+)/)?.[1];
 
-  return videoId
-    ? `https://player.vimeo.com/video/${videoId}?background=1&autoplay=1&loop=1&muted=1&autopause=0`
-    : null;
+  if (videoId) return `https://player.vimeo.com/video/${videoId}?background=1&autoplay=1&loop=1&muted=1&autopause=0`;
+
+  const youtubeId = url.match(/[?&]v=([^&]+)/)?.[1] ?? url.match(/youtu\.be\/([^?&/]+)/)?.[1];
+  if (!youtubeId) return null;
+
+  const timing = new URLSearchParams({ autoplay: '1', mute: '1', controls: '0', loop: '1', playlist: youtubeId, playsinline: '1', rel: '0' });
+  if (start !== undefined) timing.set('start', String(start));
+  if (end !== undefined) timing.set('end', String(end));
+  return `https://www.youtube-nocookie.com/embed/${youtubeId}?${timing}`;
 }
