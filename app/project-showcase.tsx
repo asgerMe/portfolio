@@ -11,7 +11,7 @@ export function ProjectShowcase() {
     const videoUrl = getVideoEmbedUrl(project);
     const isActive = activeProject === project.id;
 
-    return <article className={`media-card ${project.tone}${project.textCard ? ' text-card' : ''}`} key={project.id} onMouseEnter={() => setActiveProject(project.id)} onMouseLeave={() => setActiveProject(null)} onFocus={() => setActiveProject(project.id)} onBlur={() => setActiveProject(null)}>
+    return <article className={`media-card ${project.tone}${project.textCard ? ' text-card' : ''}${isActive ? ' is-playing' : ''}`} key={project.id} onMouseEnter={() => setActiveProject(project.id)} onMouseLeave={() => setActiveProject(null)} onFocus={() => setActiveProject(project.id)} onBlur={() => setActiveProject(null)}>
       <a className="media-link" href={project.url} target="_blank" rel="noreferrer" aria-label={`Open ${project.title}`} />
       {!project.textCard && !project.localVideo && <img className="media-thumbnail" src={project.thumbnail} alt="" />}
       {!project.textCard && isActive && videoUrl && <iframe className="video-embed" src={videoUrl} title={`${project.title} video preview`} allow="autoplay; fullscreen; picture-in-picture" />}
