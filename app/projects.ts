@@ -7,6 +7,8 @@ export type Project = {
   tone: string;
   url: string;
   videoUrl?: string;
+  referenceUrl?: string;
+  referenceLabel?: string;
   thumbnail: string;
   localVideo?: string;
   description: string;

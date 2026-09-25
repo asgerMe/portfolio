@@ -11,14 +11,15 @@ export function ProjectShowcase() {
     const videoUrl = getVideoEmbedUrl(project);
     const isActive = activeProject === project.id;
 
-    return <a className={`media-card ${project.tone}${project.textCard ? ' text-card' : ''}`} key={project.id} href={project.url} target="_blank" rel="noreferrer" aria-label={`Open ${project.title}`} onMouseEnter={() => setActiveProject(project.id)} onMouseLeave={() => setActiveProject(null)} onFocus={() => setActiveProject(project.id)} onBlur={() => setActiveProject(null)}>
+    return <article className={`media-card ${project.tone}${project.textCard ? ' text-card' : ''}`} key={project.id} onMouseEnter={() => setActiveProject(project.id)} onMouseLeave={() => setActiveProject(null)} onFocus={() => setActiveProject(project.id)} onBlur={() => setActiveProject(null)}>
+      <a className="media-link" href={project.url} target="_blank" rel="noreferrer" aria-label={`Open ${project.title}`} />
       {!project.textCard && !project.localVideo && <img className="media-thumbnail" src={project.thumbnail} alt="" />}
       {!project.textCard && isActive && videoUrl && <iframe className="video-embed" src={videoUrl} title={`${project.title} video preview`} allow="autoplay; fullscreen; picture-in-picture" />}
       {!project.textCard && isActive && project.localVideo && <video className="media-thumbnail" src={project.localVideo} autoPlay muted loop playsInline preload="metadata" />}
       <div className="media-shade" aria-hidden="true" />
       <div className="media-card-top"><span>{project.id} / {project.textCard ? 'YOUTUBE' : 'VFX'}</span></div>
-      <div className="media-card-bottom"><div><p className="media-title">{project.title}</p><p className="media-description">{project.description}</p></div></div>
-    </a>;
+      <div className="media-card-bottom"><div><p className="media-title">{project.title}</p><p className="media-description">{project.description}{project.referenceUrl && <> · <a className="media-reference" href={project.referenceUrl} target="_blank" rel="noreferrer">{project.referenceLabel ?? 'Read more'} ↗</a></>}</p></div></div>
+    </article>;
   };
 
   return <section className="work-section" id="work">
