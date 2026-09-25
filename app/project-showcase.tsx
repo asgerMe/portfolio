@@ -1,43 +1,13 @@
-'use client';
-
-import { useState } from 'react';
-import { Asterisk } from 'lucide-react';
-
-type Project = { index: string; title: string; kind: string; year: string; status: string; category: 'Web' | 'Tools' | 'Experiments'; tone: string };
-
-const projects: Project[] = [
-  { index: '01', title: 'Your next flagship project', kind: 'Product / Case study', year: '2026', status: 'Add your work', category: 'Web', tone: 'tone-cobalt' },
-  { index: '02', title: 'A useful little tool', kind: 'Utility / Open source', year: '2026', status: 'In the works', category: 'Tools', tone: 'tone-lime' },
-  { index: '03', title: 'An idea worth testing', kind: 'Prototype / Lab note', year: '2026', status: 'Experiment', category: 'Experiments', tone: 'tone-violet' },
-];
-
-const filters = ['All', 'Web', 'Tools', 'Experiments'] as const;
+import { ArrowUpRight, Play } from 'lucide-react';
+import { projects } from './projects';
 
 export function ProjectShowcase() {
-  const [active, setActive] = useState<(typeof filters)[number]>('All');
-  const visible = active === 'All' ? projects : projects.filter((project) => project.category === active);
-
-  return (
-    <section className="work-section" id="work">
-      <div className="section-heading">
-        <div><p className="kicker">01 / Selected work</p><h2>Things I’ve made</h2></div>
-        <div className="filters" aria-label="Filter projects">
-          {filters.map((filter) => <button key={filter} className={active === filter ? 'active' : ''} onClick={() => setActive(filter)}>{filter}</button>)}
-        </div>
-      </div>
-      <div className="project-grid">
-        {visible.map((project) => (
-          <article className="project-card" key={project.index}>
-            <div className={`project-visual ${project.tone}`}>
-              <span className="media-label">YOUR IMAGE / VIDEO</span><span className="project-number">{project.index}</span><Asterisk className="asterisk" size={34} strokeWidth={1.4} />
-            </div>
-            <div className="project-meta">
-              <div><h3>{project.title}</h3><p>{project.kind}</p></div>
-              <div className="project-side"><span>{project.status}</span><span>{project.year}</span></div>
-            </div>
-          </article>
-        ))}
-      </div>
-    </section>
-  );
+  return <section className="work-section" id="work">
+    <div className="section-heading media-heading"><div><p className="kicker">01 / Selected work</p><h2>A few things<br />I’ve made.</h2></div><p className="grid-note">A living index of projects, experiments and work in progress.</p></div>
+    <div className="media-grid">{projects.map((project) => <a className={`media-card ${project.tone}`} href="#top" key={project.id} aria-label={`Open ${project.title}`}>
+      <div className="media-art" aria-hidden="true"><span className="media-ring" /><span className="media-slab" /></div>
+      <div className="media-card-top"><span>{project.id}</span><span>{project.format === 'Video' ? <Play size={13} fill="currentColor" /> : 'IMG'}</span></div>
+      <div className="media-card-bottom"><span>{project.title}</span><ArrowUpRight size={17} /></div>
+    </a>)}</div>
+  </section>;
 }

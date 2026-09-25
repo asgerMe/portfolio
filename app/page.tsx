@@ -1,4 +1,5 @@
-import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import { HeroCarousel } from './hero-carousel';
 import { ProjectShowcase } from './project-showcase';
 
 export default function Home() {
@@ -11,15 +12,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="hero" id="top">
-        <p className="eyebrow"><span className="pulse" /> Available for interesting work</p>
-        <h1>I build things<br />for the <span>web</span>.</h1>
-        <div className="hero-bottom">
-          <p className="intro">Developer and maker turning rough ideas into thoughtful digital products. This is where the good ones live.</p>
-          <a className="scroll-link" href="#work">Selected work <ArrowDownRight size={20} /></a>
-        </div>
-        <div className="orbit orbit-one" aria-hidden="true" /><div className="orbit orbit-two" aria-hidden="true" />
-      </section>
+      <HeroCarousel />
 
       <ProjectShowcase />
 
