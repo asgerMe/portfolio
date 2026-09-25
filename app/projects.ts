@@ -7,6 +7,7 @@ export type Project = {
   tone: string;
   url: string;
   thumbnail: string;
+  localVideo?: string;
   description: string;
   featured: boolean;
   hero?: boolean;

@@ -8,13 +8,13 @@
     {
       "id": "houdini-rd",
       "title": "Houdini experiments / R&D",
-      "projectIds": ["06", "07", "08", "09", "10"]
+      "projectIds": ["06", "07", "08", "09", "10", "11", "12"]
     }
   ],
   "projects": [
   {
     "id": "01",
-    "title": "007 First Light",
+    "title": "007 First Light Debris Physics",
     "format": "Video",
     "tone": "tone-orange",
     "url": "https://www.youtube.com/watch?v=9JsFOTVFdw4",
@@ -72,7 +72,7 @@
   },
   {
     "id": "07",
-    "title": "The semi-implicit material point method from Frozen",
+    "title": "Implemented the semi-implicit material point method from Frozen in houdini - Master Thesis https://drive.google.com/file/d/0B16UYreWAOhYbThRUDFuWW5JYU0/view?usp=sharing&resourcekey=0-bVqe1s9LFYtJLnymlbh7EQ ",
     "format": "Video",
     "tone": "tone-lime",
     "url": "https://vimeo.com/150298443",
@@ -111,6 +111,30 @@
     "url": "https://vimeo.com/238826978",
     "thumbnail": "https://i.vimeocdn.com/video/661632502-9b853fe35b2813e99211054536e4cec98059a9bf056ed19ecccfd93edfec9372-d_640?region=us",
     "description": "Vimeo clip.",
+    "featured": false,
+    "hero": false
+  },
+  {
+    "id": "11",
+    "title": "Pig Snow Frolick",
+    "format": "Video",
+    "tone": "tone-sky",
+    "url": "/videos/pig-snow-frolick.mkv",
+    "thumbnail": "",
+    "localVideo": "/videos/pig-snow-frolick.mkv",
+    "description": "Personal Houdini study.",
+    "featured": false,
+    "hero": false
+  },
+  {
+    "id": "12",
+    "title": "Houdini Study 2022",
+    "format": "Video",
+    "tone": "tone-violet",
+    "url": "/videos/houdini-study-2022.mkv",
+    "thumbnail": "",
+    "localVideo": "/videos/houdini-study-2022.mkv",
+    "description": "Personal Houdini study.",
     "featured": false,
     "hero": false
   }

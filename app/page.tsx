@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Asger — home"><span className="brand-mark">A</span><span>ASGER.VFX</span></a>
+        <a className="brand" href="#top" aria-label="Asger — home"><span>ASGER MELDGAARD</span></a>
         <nav aria-label="Main navigation">
-          <a href="#work">Work</a><a href="#about">About</a><a href="mailto:hello@example.com">Contact <ArrowUpRight size={15} /></a>
+          <a href="#work">Portfolio</a><a href="#about">About</a><a href="mailto:hello@example.com">Contact <ArrowUpRight size={15} /></a>
         </nav>
       </header>
 
