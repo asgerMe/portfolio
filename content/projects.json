@@ -53,9 +53,10 @@
     "title": "Real-Time Volumetric Smoke",
     "format": "Video",
     "tone": "tone-sky",
-    "url": "https://vimeo.com/599345260",
+    "url": "https://graphicsinterface.org/wp-content/uploads/gi2022-10.pdf",
+    "videoUrl": "https://vimeo.com/599345260",
     "thumbnail": "https://i.vimeocdn.com/video/1235870249-b5c55142025831e085105d562a95aa56614004ccc702d6c8fce5a24345006869-d_1280?region=us",
-    "description": "A real-time smoke experiment built for game environments.",
+    "description": "Real-time fluid simulation · Graphics Interface 2022 paper.",
     "featured": false,
     "hero": true
   },
@@ -117,7 +118,7 @@
   },
   {
     "id": "11",
-    "title": "Pig Snow Frolick",
+    "title": "Super fast fracture and deformation solver for snow",
     "format": "Video",
     "tone": "tone-sky",
     "url": "videos/pig-snow-frolick.mkv",
@@ -129,7 +130,7 @@
   },
   {
     "id": "12",
-    "title": "Houdini Study 2022",
+    "title": "R@D Baked Water Simulation using Eigen functions",
     "format": "Video",
     "tone": "tone-violet",
     "url": "videos/houdini-study-2022.mkv",
