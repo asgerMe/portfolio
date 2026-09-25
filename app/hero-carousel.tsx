@@ -2,7 +2,7 @@ import { ArrowDownRight, ArrowUpRight, Play } from 'lucide-react';
 import { projects } from './projects';
 
 export function HeroCarousel() {
-  const project = projects[0];
+  const project = projects.find((item) => item.featured) ?? projects[0];
   return <section className="flagship" id="top">
     <img className="flagship-image" src={project.thumbnail} alt="" />
     <div className="flagship-shade" aria-hidden="true" />
