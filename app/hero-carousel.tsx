@@ -2,14 +2,14 @@
 
 import { ArrowDownRight } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { getVideoEmbedUrl, projects } from './projects';
+import { getVimeoEmbedUrl, projects } from './projects';
 
 export function HeroCarousel() {
   const heroProjects = projects.filter((item) => item.hero);
   const cycle = heroProjects.length ? heroProjects : projects;
   const [activeIndex, setActiveIndex] = useState(0);
   const project = cycle[activeIndex % cycle.length];
-  const videoUrl = getVideoEmbedUrl(project);
+  const videoUrl = getVimeoEmbedUrl(project.url);
 
   useEffect(() => {
     if (cycle.length < 2) return;
