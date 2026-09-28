@@ -29,9 +29,18 @@ export type ProjectSection = {
 };
 
 export type HeroContent = {
+  featuredLabel: string;
+  workLinkLabel: string;
   label: string;
+  name: string[];
   statement: string;
+  currentProjectLabel: string;
   rotationSeconds?: number;
+};
+
+export type MainBarContent = {
+  brand: string;
+  items: Array<{ label: string; href: string; externalIcon?: boolean }>;
 };
 
 export type ExperienceContent = {
@@ -53,9 +62,10 @@ export type PublicationsContent = {
   items: Array<{ type: string; title: string; url: string }>;
 };
 
-const projectContent = content as { hero: HeroContent; experience: ExperienceContent; publications: PublicationsContent; projects: Project[]; sections: ProjectSection[] };
+const projectContent = content as { hero: HeroContent; mainBar: MainBarContent; experience: ExperienceContent; publications: PublicationsContent; projects: Project[]; sections: ProjectSection[] };
 
 export const heroContent = projectContent.hero;
+export const mainBarContent = projectContent.mainBar;
 export const experienceContent = projectContent.experience;
 export const publicationsContent = projectContent.publications;
 export const projects = projectContent.projects;

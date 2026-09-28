@@ -1,8 +1,21 @@
 {
   "hero": {
-    "label": "",
-    "statement": "",
+    "featuredLabel": "Featured work",
+    "workLinkLabel": "See all work",
+    "label": "VFX artist / programmer / physics simulation",
+    "name": ["ASGER", "MELDGAARD"],
+    "statement": "I build VFX, simulations, and tools.",
+    "currentProjectLabel": "Currently showing",
     "rotationSeconds": 16
+  },
+  "mainBar": {
+    "brand": "ASGER MELDGAARD",
+    "items": [
+      { "label": "Portfolio", "href": "#work" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "About", "href": "#about" },
+      { "label": "Contact", "href": "mailto:hello@example.com", "externalIcon": true }
+    ]
   },
   "experience": {
     "items": [
@@ -13,14 +26,14 @@
         "role": "Software Engineer",
         "organization": "IO Interactive · Full-time",
         "period": "Jan 2021 — Present",
-        "details": ["Worked on Project Fantasy. VFX / Simulation R&D: GPU-based fluid and physics simulation, and procedural pipelines and tooling in Houdini."]
+        "details": ["Worked on Project Fantasy. R&D on novel fast fluid simulation methods, Procedural tooling and pipelines with Houdini, shaders, materials and gpu physics / particles"]
       },
       {
         "company": "INDEPENDENT",
         "role": "Software Engineer",
         "organization": "Freelance · Self-employed",
         "period": "Jan 2019 — Aug 2022",
-        "details": ["Designed cloud-based Bayesian travel-time inference methods used by Denmark’s largest mobile-car-washing provider."]
+        "details": ["Designed a cloud-based routing solution using Bayesian travel-time inference methods used by Denmark’s largest mobile-car-washing provider."]
       },
       {
         "company": "UNIVERSITY OF COPENHAGEN",
@@ -32,7 +45,7 @@
         "company": "HARVARD UNIVERSITY",
         "role": "PhD Student",
         "period": "Feb 2019 — May 2019",
-        "details": ["Studied deep-learning-based physics simulation in the Boston area."]
+        "details": ["Studied deep-learning-based physics simulation for glacial isostatic adjustment models."]
       },
       {
         "company": "D60",
@@ -47,7 +60,7 @@
         "company": "AARHUS UNIVERSITY",
         "role": "Master's Degree, Geophysics",
         "period": "2013 — 2016",
-        "details": []
+        "details": ["Mostly on glacial dynamics - Implemented the semi implicit material point method from Frozen in Houdini for my master"]
       },
       {
         "company": "AARHUS UNIVERSITY",

@@ -1,15 +1,15 @@
 import { ArrowUpRight } from 'lucide-react';
 import { HeroCarousel } from './hero-carousel';
 import { ProjectShowcase } from './project-showcase';
-import { experienceContent, publicationsContent } from './projects';
+import { experienceContent, mainBarContent, publicationsContent } from './projects';
 
 export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Asger — home"><span>ASGER MELDGAARD</span></a>
+        <a className="brand" href="#top" aria-label={`${mainBarContent.brand} home`}><span>{mainBarContent.brand}</span></a>
         <nav aria-label="Main navigation">
-          <a href="#work">Portfolio</a><a href="#experience">Experience</a><a href="#about">About</a><a href="mailto:hello@example.com">Contact <ArrowUpRight size={15} /></a>
+          {mainBarContent.items.map((item) => <a href={item.href} key={`${item.href}-${item.label}`}>{item.label}{item.externalIcon && <ArrowUpRight size={15} />}</a>)}
         </nav>
       </header>
 
