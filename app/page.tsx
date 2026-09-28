@@ -1,6 +1,7 @@
 import { ArrowUpRight } from 'lucide-react';
 import { HeroCarousel } from './hero-carousel';
 import { ProjectShowcase } from './project-showcase';
+import { experienceContent, publicationsContent } from './projects';
 
 export default function Home() {
   return (
@@ -31,19 +32,24 @@ export default function Home() {
       <section className="experience-section" id="experience">
         <div className="experience-heading"><p className="kicker">03 / Experience</p><h2>Experience.</h2></div>
         <div className="experience-list">
-          <article className="experience-item"><p className="experience-company io">IO</p><div><h3>Software Engineer</h3><p className="experience-organization">IO Interactive · Full-time</p><p className="experience-period">Jan 2021 — Present</p><p>Copenhagen, Denmark</p></div></article>
-          <article className="experience-item"><p className="experience-company">INDEPENDENT</p><div><h3>Software Engineer</h3><p className="experience-organization">Freelance · Self-employed</p><p className="experience-period">Jan 2019 — Aug 2022</p><p>Designed cloud-based Bayesian travel-time inference methods used by Denmark’s largest mobile-car-washing provider.</p></div></article>
-          <article className="experience-item"><p className="experience-company">UNIVERSITY OF<br />COPENHAGEN</p><div><h3>PhD Scholar</h3><p className="experience-period">Jun 2016 — Jun 2019</p><p>Copenhagen, Denmark</p></div></article>
-          <article className="experience-item"><p className="experience-company">HARVARD<br />UNIVERSITY</p><div><h3>PhD Student</h3><p className="experience-period">Feb 2019 — May 2019</p><p>Studied deep-learning-based physics simulation in the Boston area.</p></div></article>
-          <article className="experience-item"><p className="experience-company">D60</p><div><h3>Graphic Designer</h3><p className="experience-period">Sep 2014 — Sep 2015</p><p>Aarhus, Denmark</p></div></article>
-          <p className="experience-divider">Education</p>
-          <article className="experience-item"><p className="experience-company">AARHUS<br />UNIVERSITY</p><div><h3>Master&apos;s Degree, Geophysics</h3><p className="experience-period">2013 — 2016</p></div></article>
-          <article className="experience-item"><p className="experience-company">AARHUS<br />UNIVERSITY</p><div><h3>Bachelor&apos;s Degree, Nanoscience</h3><p className="experience-period">2009 — 2013</p></div></article>
+          {experienceContent.items.map((item, index) => item.divider ? <p className="experience-divider" key={`divider-${index}`}>{item.divider}</p> : <article className="experience-item" key={`${item.company}-${item.role}`}><p className={`experience-company${item.logo ? ' io' : ''}`}>{item.logo ? <img src={item.logo} alt={item.logoAlt ?? item.company ?? ''} /> : item.company}</p><div><h3>{item.role}</h3>{item.organization && <p className="experience-organization">{item.organization}</p>}{item.period && <p className="experience-period">{item.period}</p>}{item.details?.map((detail) => <p key={detail}>{detail}</p>)}</div></article>)}
+        </div>
+      </section>
+
+      <section className="publications-section" id="publications">
+        <p className="kicker">04 / Publications</p>
+        <div className="publications-heading"><h2>{publicationsContent.title}</h2><p>{publicationsContent.description}</p></div>
+        <div className="publications-list">
+          {publicationsContent.items.map((publication) => <a className="publication-item" href={publication.url} target="_blank" rel="noreferrer" key={publication.url}><span className="publication-type">{publication.type}</span><span className="publication-title">{publication.title}</span><span className="publication-action">Read ↗</span></a>)}
+          {false && <>
+          <a className="publication-item" href="https://drive.google.com/file/d/0B16UYreWAOhYbThRUDFuWW5JYU0/view?usp=sharing&amp;resourcekey=0-bVqe1s9LFYtJLnymlbh7EQ" target="_blank" rel="noreferrer"><span className="publication-type">Master thesis</span><span className="publication-title">Semi-Implicit Material Point Method</span><span className="publication-action">Read ↗</span></a>
+          <a className="publication-item" href="https://graphicsinterface.org/wp-content/uploads/gi2022-10.pdf" target="_blank" rel="noreferrer"><span className="publication-type">Paper · Graphics Interface 2022</span><span className="publication-title">Fast Vortex Particle Method for Fluid-Character Interaction</span><span className="publication-action">Read ↗</span></a>
+          </>}
         </div>
       </section>
 
       <footer>
-        <div><p className="kicker">04 / Contact</p><a className="big-link" href="mailto:hello@example.com">Contact <ArrowUpRight /></a></div>
+        <div><p className="kicker">05 / Contact</p><a className="big-link" href="mailto:hello@example.com">Contact <ArrowUpRight /></a></div>
         <div className="footer-bottom"><p>© 2026 Asger</p><div><a href="#top">Back to top ↑</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
       </footer>
     </main>

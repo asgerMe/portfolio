@@ -1,28 +1,94 @@
 {
+  "hero": {
+    "label": "",
+    "statement": "",
+    "rotationSeconds": 16
+  },
+  "experience": {
+    "items": [
+      {
+        "company": "IO Interactive",
+        "logo": "/io-interactive-logo.svg",
+        "logoAlt": "IO Interactive",
+        "role": "Software Engineer",
+        "organization": "IO Interactive · Full-time",
+        "period": "Jan 2021 — Present",
+        "details": ["Worked on Project Fantasy. VFX / Simulation R&D: GPU-based fluid and physics simulation, and procedural pipelines and tooling in Houdini."]
+      },
+      {
+        "company": "INDEPENDENT",
+        "role": "Software Engineer",
+        "organization": "Freelance · Self-employed",
+        "period": "Jan 2019 — Aug 2022",
+        "details": ["Designed cloud-based Bayesian travel-time inference methods used by Denmark’s largest mobile-car-washing provider."]
+      },
+      {
+        "company": "UNIVERSITY OF COPENHAGEN",
+        "role": "PhD Scholar",
+        "period": "Jun 2016 — Jun 2019",
+        "details": ["Copenhagen, Denmark"]
+      },
+      {
+        "company": "HARVARD UNIVERSITY",
+        "role": "PhD Student",
+        "period": "Feb 2019 — May 2019",
+        "details": ["Studied deep-learning-based physics simulation in the Boston area."]
+      },
+      {
+        "company": "D60",
+        "role": "Graphic Designer",
+        "period": "Sep 2014 — Sep 2015",
+        "details": ["Aarhus, Denmark"]
+      },
+      {
+        "divider": "Education"
+      },
+      {
+        "company": "AARHUS UNIVERSITY",
+        "role": "Master's Degree, Geophysics",
+        "period": "2013 — 2016",
+        "details": []
+      },
+      {
+        "company": "AARHUS UNIVERSITY",
+        "role": "Bachelor's Degree, Nanoscience",
+        "period": "2009 — 2013",
+        "details": []
+      }
+    ]
+  },
   "sections": [
+
     {
-      "id": "real-time-vfx",
-      "title": "Real-time VFX",
-      "projectIds": ["01", "02", "03", "05"]
+      "id": "fluid-physics",
+      "title": "Real time fluid simulation",
+      "description": "Early prototypes of GPU-based fluid simulation R&D. Collision with skinned meshes using collocation methods",
+      "projectIds": ["02", "03", "05"]
     },
     {
       "id": "houdini-rd",
-      "title": "Houdini experiments / R&D",
-      "projectIds": ["06", "07", "08", "09", "10", "11", "12"]
-    }
+      "title": "Houdini Projects",
+      "description": "Various Houdini Projects.",
+      "projectIds": ["06", "07", "08", "09", "10"]
+    },
+    {
+    "id": "first-light",
+    "title": "007 First Light",
+    "description": "Worked on debris physics, screen-space shadows, and parallax occlusion mapping. Selected VFX work from 15:52–17:53.",
+    "projectIds": ["01"]
+  }
   ],
   "projects": [
   {
     "id": "01",
-    "title": "007 First Light Debris Physics",
+    "title": "007 First Light",
     "format": "Video",
     "tone": "tone-orange",
     "url": "https://www.youtube.com/watch?v=9JsFOTVFdw4",
     "thumbnail": "https://i.ytimg.com/vi/9JsFOTVFdw4/maxresdefault.jpg",
-    "description": "Selected VFX work · 15:52–17:53.",
+    "description": "Worked on debris physics, screen-space shadows, and parallax occlusion mapping. Selected VFX work · 15:52–17:53.",
     "featured": false,
     "hero": false,
-    "textCard": true,
     "start": 952,
     "end": 1073
   },
@@ -33,9 +99,10 @@
     "tone": "tone-lime",
     "url": "https://vimeo.com/722302559",
     "thumbnail": "https://i.vimeocdn.com/video/1454658733-2fb8f0f2515dee22c19fef97f49748b25b2e7383d227262ffd0d644b8f9b88d8-d_1280?region=us",
-    "description": "An exploratory render focused on atmosphere and form.",
+    "description": "Fluid simulation with skinned mesh collisions - using collocation methods",
     "featured": false,
-    "hero": true
+    "hero": true,
+    "startSeconds": 0
   },
   {
     "id": "03",
@@ -44,9 +111,10 @@
     "tone": "tone-violet",
     "url": "https://vimeo.com/722302367",
     "thumbnail": "https://i.vimeocdn.com/video/1454658412-033f78225aa12feb7888788c76e9622ef8b6d52d3001a63ff6f5e9e0c4890cfe-d_1280?region=us",
-    "description": "A shorter cut from the Beam visual exploration.",
+    "description": "Fluid simulation with skinned mesh collisions - using collocation methods",
     "featured": false,
-    "hero": true
+    "hero": true,
+    "startSeconds": 0
   },
   {
     "id": "05",
@@ -56,9 +124,10 @@
     "url": "https://graphicsinterface.org/wp-content/uploads/gi2022-10.pdf",
     "videoUrl": "https://vimeo.com/599345260",
     "thumbnail": "https://i.vimeocdn.com/video/1235870249-b5c55142025831e085105d562a95aa56614004ccc702d6c8fce5a24345006869-d_1280?region=us",
-    "description": "Real-time fluid simulation · Graphics Interface 2022 paper.",
+    "description": "GPU-based fluid simulation",
     "featured": false,
-    "hero": true
+    "hero": true,
+    "startSeconds": 10
   },
   {
     "id": "06",
@@ -69,7 +138,8 @@
     "thumbnail": "https://i.vimeocdn.com/video/635389783-8c7b1247b3f1de5201b64482d57bb20312acc3043eb48ca8eb0b6deb89e59c25-d_640?region=us",
     "description": "Vimeo clip.",
     "featured": false,
-    "hero": false
+    "hero": true,
+    "startSeconds": 4
   },
   {
     "id": "07",
@@ -82,7 +152,8 @@
     "thumbnail": "https://i.vimeocdn.com/video/549738677-a8234c92ab96a28bdbce56c6c71bc0103f17ab374c7581911a6ee95b023c0d00-d_640?region=us",
     "description": "Houdini implementation.",
     "featured": false,
-    "hero": false
+    "hero": true,
+    "startSeconds": 15
   },
   {
     "id": "08",
@@ -93,7 +164,8 @@
     "thumbnail": "https://i.vimeocdn.com/video/682420148-d6b4209fa0923bd3433212e896ce873b10510822961cdf6e7369252828f158fd-d_640?region=us",
     "description": "Vimeo clip.",
     "featured": false,
-    "hero": false
+    "hero": true,
+    "startSeconds": 0
   },
   {
     "id": "09",
@@ -104,7 +176,8 @@
     "thumbnail": "https://i.vimeocdn.com/video/649600213-8dfdbbdc0efe7d5f88b9b3e5a2289afa3ac1e933ba90d7e544e1e62ccc87e570-d_640?region=us",
     "description": "Vimeo clip.",
     "featured": false,
-    "hero": false
+    "hero": true,
+    "startSeconds": 0
   },
   {
     "id": "10",
@@ -115,31 +188,50 @@
     "thumbnail": "https://i.vimeocdn.com/video/661632502-9b853fe35b2813e99211054536e4cec98059a9bf056ed19ecccfd93edfec9372-d_640?region=us",
     "description": "Vimeo clip.",
     "featured": false,
-    "hero": false
+    "hero": true,
+    "startSeconds": 0
   },
   {
     "id": "11",
-    "title": "Super fast fracture and deformation solver for snow",
+    "title": "Fracture and deformation solver for snow",
     "format": "Video",
     "tone": "tone-sky",
     "url": "videos/pig-snow-frolick.mkv",
     "thumbnail": "",
     "localVideo": "videos/pig-snow-frolick.mkv",
-    "description": "Personal Houdini study.",
+    "description": "Fast fracture and deformation solver study for snow.",
     "featured": false,
-    "hero": false
+    "hero": true,
+    "startSeconds": 0
   },
   {
     "id": "12",
-    "title": "R@D Baked Water Simulation using Eigen functions",
+    "title": "Baked Water Simulation with Laplacian Eigen Functions",
     "format": "Video",
     "tone": "tone-violet",
     "url": "videos/houdini-study-2022.mkv",
     "thumbnail": "",
     "localVideo": "videos/houdini-study-2022.mkv",
-    "description": "Personal Houdini study.",
+    "description": "Early collision prototypes on skinned meshes using collocation methods — designed for real-time use within AAA production budgets.",
     "featured": false,
-    "hero": false
+    "hero": true,
+    "startSeconds": 0
   }
-  ]
+  ],
+  "publications": {
+    "title": "Publications.",
+    "description": "Research and technical work spanning fluid simulation and computational physics.",
+    "items": [
+      {
+        "type": "Master thesis",
+        "title": "Semi-Implicit Material Point Method",
+        "url": "https://drive.google.com/file/d/0B16UYreWAOhYbThRUDFuWW5JYU0/view?usp=sharing&resourcekey=0-bVqe1s9LFYtJLnymlbh7EQ"
+      },
+      {
+        "type": "Paper · Graphics Interface 2022",
+        "title": "Fast Vortex Particle Method for Fluid-Character Interaction",
+        "url": "https://graphicsinterface.org/wp-content/uploads/gi2022-10.pdf"
+      }
+    ]
+  }
 }
