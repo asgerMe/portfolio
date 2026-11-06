@@ -14,7 +14,7 @@ export function ProjectShowcase() {
     return <article className="project-item" key={project.id} onMouseEnter={() => setActiveProject(project.id)} onMouseLeave={() => setActiveProject(null)} onFocus={() => setActiveProject(project.id)} onBlur={() => setActiveProject(null)}>
       <div className={`media-card ${project.tone}${isActive ? ' is-playing' : ''}`}>
         <a className="media-link" href={project.url} target="_blank" rel="noreferrer" aria-label={`Open ${project.title}`} />
-        {!project.localVideo && <img className="media-thumbnail" src={project.thumbnail} alt="" />}
+        {project.thumbnail && <img className="media-thumbnail" src={project.thumbnail} alt="" />}
         {isActive && videoUrl && <iframe className="video-embed" src={videoUrl} title={`${project.title} video preview`} allow="autoplay; fullscreen; picture-in-picture" />}
         {isActive && project.localVideo && <video className="media-thumbnail" src={project.localVideo} autoPlay muted loop playsInline preload="metadata" />}
         <div className="media-shade" aria-hidden="true" />
