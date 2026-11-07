@@ -22,11 +22,11 @@ export default function Home() {
         <div className="about-grid">
           <h2>About</h2>
           <div className="about-copy">
-            <p>Graphics and VFX work by Asger Meldgaard.</p>
-            <p>Add a short bio, role, software, and contact details here.</p>
+            <p>Asger Meldgaard is a software engineer working across graphics, visual effects, and physics simulation.</p>
+            <p>His work includes real-time experiments, procedural tools, and simulation studies in Houdini.</p>
           </div>
         </div>
-        <div className="capabilities" aria-label="Capabilities"><span>Motion</span><span>Simulation</span><span>Real-time</span><span>Compositing</span></div>
+        <div className="capabilities" aria-label="Capabilities"><span>Graphics</span><span>Simulation</span><span>Real-time</span><span>Procedural tools</span></div>
       </section>
 
       <section className="experience-section" id="experience">

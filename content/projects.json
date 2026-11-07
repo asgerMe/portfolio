@@ -26,7 +26,7 @@
         "role": "Software Engineer",
         "organization": "IO Interactive · Full-time",
         "period": "Jan 2021 — Present",
-        "details": ["R&D for Project Fantasy, exploring scalable GPU-based fluid simulation and other physics-driven effects for AAA production. Designed procedural pipeline infrastructure and tools in Houdini and the Glacier Engine."]
+        "details": ["Developed procedural tools and pipeline infrastructure using Houdini and the Glacier Engine, alongside work on physics-driven visual effects."]
       },
       {
         "company": "INDEPENDENT",
@@ -75,13 +75,13 @@
     {
       "id": "fluid-physics",
       "title": "Real-time fluid simulation",
-      "description": "Early Unity prototypes that explored GPU-based fluids and fast collision handling for skinned meshes. This work became a foundation for further R&D at IO Interactive.",
+      "description": "Unity prototypes exploring real-time fluid simulation and interaction with animated geometry, alongside a volumetric smoke study.",
       "projectIds": ["02", "03", "05"]
     },
     {
       "id": "houdini-rd",
       "title": "Houdini projects",
-      "description": "A selection of procedural tools, simulation research, and technical experiments created in Houdini.",
+      "description": "Procedural tools, simulation studies, and technical experiments created in Houdini.",
       "projectIds": ["14", "06", "07", "08", "09", "13", "10", "11", "12"]
     },
     {
@@ -100,7 +100,7 @@
     "url": "videos/pond-water-ripples.mp4",
     "thumbnail": "videos/pond-water-ripples.jpg",
     "localVideo": "videos/pond-water-ripples.mp4",
-    "description": "A water ripple simulation rendered in Houdini.",
+    "description": "A custom shallow-water solver for Houdini that simulates dispersive ripples in sparse patches across geometry.",
     "featured": false,
     "hero": false
   },
@@ -124,7 +124,7 @@
     "tone": "tone-lime",
     "url": "https://vimeo.com/722302559",
     "thumbnail": "https://i.vimeocdn.com/video/1454658733-2fb8f0f2515dee22c19fef97f49748b25b2e7383d227262ffd0d644b8f9b88d8-d_1280?region=us",
-    "description": "A Unity prototype exploring fluid interaction with skinned meshes using collocation-based collision handling.",
+    "description": "A Unity prototype exploring fluid interaction with animated meshes.",
     "featured": false,
     "hero": true,
     "startSeconds": 0
@@ -136,7 +136,7 @@
     "tone": "tone-violet",
     "url": "https://vimeo.com/722302367",
     "thumbnail": "https://i.vimeocdn.com/video/1454658412-033f78225aa12feb7888788c76e9622ef8b6d52d3001a63ff6f5e9e0c4890cfe-d_1280?region=us",
-    "description": "A second Unity prototype exploring real-time fluid interaction and collision handling for animated meshes.",
+    "description": "A second Unity prototype exploring real-time fluid interaction with animated meshes.",
     "featured": false,
     "hero": true,
     "startSeconds": 0
@@ -236,7 +236,7 @@
     "url": "videos/pig-snow-frolick.mkv",
     "thumbnail": "",
     "localVideo": "videos/pig-snow-frolick.mkv",
-    "description": "An exploration of fast snow fracture and deformation techniques suitable for real-time game production.",
+    "description": "A Houdini study exploring snow fracture and deformation techniques.",
     "featured": false,
     "hero": true,
     "startSeconds": 0
